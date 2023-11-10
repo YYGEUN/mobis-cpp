@@ -59,12 +59,18 @@ public:
 
 int main()
 {
-	MenuItem m1("김밥", 11);
-	MenuItem m2("라면", 12);
+	MenuItem m1("참치김밥",  11);
+	MenuItem m2("소고기김밥", 12);
+	MenuItem m3("라면", 21);
+
+	PopupMenu kimbab("김밥류");
+	kimbab.add(&m1);
+	kimbab.add(&m2);
+
 
 	PopupMenu pm("오늘의 점심 메뉴");
-	pm.add(&m1);
-	pm.add(&m2);
+	pm.add( ? );
+	pm.add(&m3);
 
 	pm.command(); 
 }
