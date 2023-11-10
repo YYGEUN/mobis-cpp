@@ -83,5 +83,6 @@ int main()
 	pm2->add( new MenuItem("FHD", 22));
 
 	// 이제 메뉴를 시작하려면 ?
+	root->command();
 }
 
