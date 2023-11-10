@@ -16,6 +16,10 @@ public:
 	std::string get_title() { return title; }
 
 	virtual ~BaseMenu() {}
+
+	// BaseMenu 에서는 command 가 있다는 것만 알리고
+	// 실제 구현은 각각의 메뉴에서!!
+	virtual void command() = 0;
 };
 
 class MenuItem : public BaseMenu
@@ -65,6 +69,9 @@ public:
 				continue;
 
 			v[cmd-1]->command();
+				// vector<BaseMenu*> 이므로 v[cmd-1] 은 BaseMenu* 입니다
+				// 이 코드가 되려면 반드시 BaseMenu 에서 command 가 있어야 합니다.
+				// 모든 파생 클래스의 공통의 특징은 반드시 기반 클래스에도 있어야 한다.!
 		}
 	}
 };
