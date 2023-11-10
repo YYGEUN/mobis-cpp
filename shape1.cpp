@@ -1,4 +1,5 @@
 // shape1.cpp
+#include <iostream>
 
 class Animal
 {
