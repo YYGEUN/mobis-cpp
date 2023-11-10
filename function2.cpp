@@ -21,11 +21,22 @@ int main()
 	// STL 의 std::function 이 함수포인터 보다 편리합니다.
 	// 사용법 : std::function<함수모양> 
 
-	std::function<void(int)> f;
+	std::function<void(int)> f; // f가 함수 포인터 처럼 함수의 주소를 보관하는 도구
 
 	f = &f1;
 	f(10); // f1(10)
 
+//	f = &f2; // error. f는 인자가 한개인 것의 주소만 가능한데, f2 는 인자가 2개!
+
+	// std::function 의 장점 : std::bind 의 반환값 보관 가능
+	// 즉, "2항 함수 => 1항 함수"로 변경해서 담으면 됩니다.
+	f = std::bind(&f2, _1, 3);
+
+	f(5); // f2(5, 3)
+
+
+	f = std::bind(&f4, ???);
+	f(5); // f4(3, 6, 5, 9);
 }
 
 
