@@ -13,10 +13,18 @@ void f2(int a, int b) { printf("f2 : %d, %d\n", a, b);}
 int main()
 {
 	// C의 함수 포인터는 너무 불편합니다.
-	void(*f)(int) = &f1; 
-	f(10); // f1(10)
+//	void(*f)(int) = &f1; 
+//	f(10); // f1(10)
+//	f = &f2; // error. 인자의 모양의 다름!
 
-	f = &f2; // error. 인자의 모양의 다름!
+	//===============================================
+	// STL 의 std::function 이 함수포인터 보다 편리합니다.
+	// 사용법 : std::function<함수모양> 
+
+	std::function<void(int)> f;
+
+	f = &f1;
+	f(10); // f1(10)
 
 }
 
