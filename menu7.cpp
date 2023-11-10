@@ -78,6 +78,11 @@ public:
 	}
 };
 
+// 메뉴 선택시 수행될 함수들을 만들어서 메뉴에 등록하세요
+void foo() { std::cout << "foo\n"; getch();}
+void goo() { std::cout << "goo\n"; getch();}
+void hoo(int id) { std::cout << "hoo " << id << "\n"; getch();}
+
 
 int main()
 {
@@ -86,16 +91,14 @@ int main()
 	PopupMenu* pm2 = new PopupMenu("해상도 변경");
 
 	root->add(pm1);
-//	root->add(pm2);
-	pm1->add(pm2);
+	root->add(pm2);
 
-
-	pm1->add( new MenuItem("RED",  11));
-	pm1->add( new MenuItem("BLUE", 12));
+	pm1->add( new MenuItem("RED",  11, &foo));
+	pm1->add( new MenuItem("BLUE", 12, &goo));
 	pm1->add( new MenuItem("GREEN", 13));
 
-	pm2->add( new MenuItem("HD",  21));
-	pm2->add( new MenuItem("FHD", 22));
+	pm2->add( new MenuItem("HD",  21, std::bind(&hoo, 21) ));
+	pm2->add( new MenuItem("FHD", 22, std::bind(&hoo, 22)));
 
 	// 이제 메뉴를 시작하려면 ?
 	root->command();
