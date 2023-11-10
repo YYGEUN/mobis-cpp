@@ -16,11 +16,27 @@
 
 class Shape 
 {
+protected:
+	int color; // 모든 도형은 색상이 있다.
+
 public:
 	virtual ~Shape() {}
 
 	virtual void draw() { std::cout << "draw shape\n"; }
+
+	// 아래 멤버 함수는 "virtual" 로 할까요 ? 하지 말까요 ?
+	// => 파생 클래스가 이 함수를 override 할 이유는 없다.!! 
+	// => non-virtual
+	void set_color(int c) { color = c;}
+
+	// 모든 도형은 면적를 구할수 있다. virtual ? non-virtual
+	// => 모든 도형은 면적을 구하는 방법이 다르다.!!
+	// => override 해야 한다.
+	// => virtual
+	virtual int get_area() { return 0;}
 };
+
+
 
 
 
@@ -38,7 +54,7 @@ class Circle : public Shape
 	int x, y, radius;
 public:
 	Circle(int x, int y, int r) : x(x), y(y), radius(r) {}
-	
+
 	void draw() override { std::cout << "draw circle" << std::endl;}
 };
 
