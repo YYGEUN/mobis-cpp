@@ -1,8 +1,8 @@
 // reference_return.cpp
 int x = 0;
-
-int  f1() { return x;}
-int& f2() { return x;}
+int  f1() { return x;} // x 가 가진 값 "0" 을 반환하는 코드
+int& f2() { return x;} // 값이 아닌 x 라는 변수의 별명을 반환해 달라.
+						// => 의도 : 함수 호출을 왼쪽에 놓을수 있게 된다.
 
 int main()
 {
@@ -13,6 +13,6 @@ int main()
 	// v[0] = 10; //  v.operator[](0) = 10    의 원리 입니다.
 
 	// 아래 2줄을 생각해 봅시다.	
-	f1() = 10;
+	f1() = 10; // "0 = 10" 이므로 error
 	f2() = 10;
 }
