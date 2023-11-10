@@ -11,12 +11,15 @@
 //    그래야지, Shape* 로 해당 특징을 사용할수 있다.
 //    => 문법적인 규칙이 아닌, 디자인 측면에서의 규칙!!
 
+// 4. 기반 클래스가 가진 멤버 함수중에서 "파생 클래스가 override" 하게 되는 것은 반드시
+//    가상함수로 설계 되어야 한다.!!
+
 class Shape 
 {
 public:
 	virtual ~Shape() {}
 
-	void draw() { std::cout << "draw shape\n"; }
+	virtual void draw() { std::cout << "draw shape\n"; }
 };
 
 
@@ -26,7 +29,8 @@ class Rect : public Shape
 	int x, y, width, height;
 public:
 	Rect(int x, int y, int w, int h) : x(x), y(y), width(w), height(h) 	{}
-	void draw() { std::cout << "draw rect" << std::endl;}
+
+	void draw() override { std::cout << "draw rect" << std::endl;}
 };
 
 class Circle : public Shape
@@ -34,7 +38,8 @@ class Circle : public Shape
 	int x, y, radius;
 public:
 	Circle(int x, int y, int r) : x(x), y(y), radius(r) {}
-	void draw() { std::cout << "draw circle" << std::endl;}
+	
+	void draw() override { std::cout << "draw circle" << std::endl;}
 };
 
 
