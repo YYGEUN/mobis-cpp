@@ -69,8 +69,9 @@ int main()
 
 
 	PopupMenu pm("오늘의 점심 메뉴");
-	pm.add( ? );
-	pm.add(&m3);
+	pm.add( &kimbab ); 	// 현재는 에러!!! 되도록 만들어 봅시다.
+						// => 해결책은 5번소스에서
+	pm.add( &m3 );
 
 	pm.command(); 
 }
