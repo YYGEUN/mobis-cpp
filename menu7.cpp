@@ -3,7 +3,7 @@
 #include <string>
 #include <conio.h>
 #include <functional>
-using namespace std::place_holders;
+using namespace std::placeholders;
 
 
 class BaseMenu
@@ -81,7 +81,8 @@ public:
 // 메뉴 선택시 수행될 함수들을 만들어서 메뉴에 등록하세요
 void foo() { std::cout << "foo\n"; getch();}
 void goo() { std::cout << "goo\n"; getch();}
-void hoo(int id) { std::cout << "hoo " << id << "\n"; getch();}
+void hoo(int id) 
+{ std::cout << "hoo " << id << "\n";getch();}
 
 
 int main()

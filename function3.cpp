@@ -1,7 +1,7 @@
 // function1.cpp
 #include <iostream>
 #include <functional> // std::bind 사용하기 위해
-using namespace std::place_holders; // 1_, _2, _3
+using namespace std::placeholders; // 1_, _2, _3
 
 void f4(int a, int b, int c, int d)
 {
