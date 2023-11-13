@@ -1,7 +1,7 @@
 #include <iostream>
-#include "menu.h"
+#include "menu.h" // git 에 있습니다.
 
-// 아래 코드를 추가해 보세요
+// 아래 코드를 실행해 보세요
 
 class Shape {}; // 여러분이 만드는 제품으로 변경하세요
 
