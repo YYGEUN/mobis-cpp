@@ -84,7 +84,7 @@ int main()
 	// 1. 공장을 건설하고
 	ShapeFactory factory;
 
-	// 2. 공장에 제품을 등록합니다.
+	// 2. 공장에 제품(생성함수)를 등록합니다.
 	factory.register_shape(1, &Rect::create);
 	factory.register_shape(2, &Circle::create);
 
