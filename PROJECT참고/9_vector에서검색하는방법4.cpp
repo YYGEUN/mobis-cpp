@@ -20,7 +20,7 @@ int main()
 	v.push_back( new Appliance("name3"));
 
 	// name2 를 찾은후 그 위치를 가리키는 반복자(포인터)를 얻습니다.
-	auto p1 = std::find(v.begin(), v.end(), 
+	auto p1 = std::find_if(v.begin(), v.end(), 
 						[](Appliance* p){ return p->get_name() == "name2"; });
 
 
