@@ -3,6 +3,13 @@
 #include <map>
 #include <iostream>
 
+// send_sms 함수에서
+// 이전 버전 : [] 연산자를 사용해서 key 를 찾았습니다.
+// 수정 버전 : [] 연산자가 아닌 m.find() 를 사용합니다.
+
+// 기존 코드 사용하시는 분들은 
+// => send_sms 함수 내용만 교체 하세요
+
 class SMSManager
 {
 	using PHONENUMBER = std::string;
