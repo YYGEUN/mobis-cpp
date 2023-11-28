@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class CString
+{
+public:
+	CString();
+	CString(char* str);
+	CString(const CString& string);
+	~CString();
+	CString operator=(CString& string);
+	CString operator=(char* str);
+	void Print();
+public:
+   char* m_str;
+   int m_length;
+}; 
+
+int main()
+{
+	CString str1("abcdefg");
+	CString str2 = "abcdefg";
+	str1.Print();
+	str2.Print();
+	
+	str1 = "abcdefgh";
+	str2 = str1;
+	CString str3 = str1;
+	str1.Print();
+	str2.Print();
+	str3.Print();
+
+	return 0;
+}
