@@ -1,0 +1,18 @@
+﻿  appliance.cpp
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(25,12): warning C4244: 'return': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(29,12): warning C4244: 'return': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(115,37): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(130,38): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(176,37): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(191,38): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(225,37): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(259,37): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\appliance.cpp(274,38): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  HomeAutomationSystem.cpp
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\menu.h(26,33): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\menu.h(40,33): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\menu.h(26,33): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\Project_cpp\menu.h(40,33): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Project_cpp.vcxproj -> C:\Users\user\Desktop\c_plus\cpp_ver3\cpp_project\renew\Project_cpp\x64\Debug\Project_cpp.exe
